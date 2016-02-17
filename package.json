@@ -1,0 +1,15 @@
+{
+  "name": "pgs-ram2doc",
+  "version": "1.0.0",
+  "description": "raml to html doc parser",
+  "main": "src/app.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adam Mortka",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-preset-es2015": "^6.5.0"
+  }
+}
