@@ -1,0 +1,22 @@
+#%RAML 0.8
+title: some app
+mediaType: application/json
+baseUri: http://127.0.0.1:666/
+
+
+# Reusable schemas (book, user etc...)
+schemas:
+  - collection: !include schemas/collection.json
+  - book: !include schemas/book.json
+
+# Reusable traits (pageable, sortable etc...)
+traits:
+  - pageable: !include traits/pageable.raml
+  - searchable: !include traits/searchable.raml
+  - sortable: !include traits/sortable.raml
+
+# Resources
+/users: !include routes/users.raml
+/token: !include routes/token.raml
+/books: !include routes/books.raml
+/images: !include routes/images.raml

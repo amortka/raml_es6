@@ -1,0 +1,14 @@
+{
+  ID: 123456,
+  CopyID: 123456,
+  CoverImage:"xczc",
+  Title: 'Node.js', // {String}
+  Authors: 'JS Node', // {String}
+  Created: 12345678, // {Number} timestamp
+  Published: 2015, // {Number} year
+  Rating: 9.1,
+  BookDescription: 'dfgdfgfdg',
+  Status: 'active',
+  Available: {wro: 3, rze: 2, gda: 4, onl: 1},
+  Tags: [ 'c#', 'php' ]
+}

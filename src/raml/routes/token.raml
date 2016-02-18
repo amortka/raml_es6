@@ -1,0 +1,30 @@
+#/token:
+  description: Validates user on Active Directory and return validation token if user is authenticated
+  post:
+      description: Validates user on Active Directory
+      body:
+        application/x-www-form-urlencoded:
+          formParameters:
+            grant_type:
+              description: password
+              type: string
+              required: true
+              example: password
+            username:
+              description: Ldap login
+              type: string
+              required: true
+              example: xxxx
+            password:
+              description: Ldap password 
+              type: string
+              required: true
+              example: xxx
+      responses:
+        200:
+          body:
+            example: !include ../examples/success-token.json
+        400:
+          body:
+            example: !include ../examples/error-token.json
+ 

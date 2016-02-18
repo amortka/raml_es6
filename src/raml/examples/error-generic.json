@@ -1,0 +1,6 @@
+{
+  result: null,
+  error: [
+      {server: "Server error occurred"}
+    ]
+}

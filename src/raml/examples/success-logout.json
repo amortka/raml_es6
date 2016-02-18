@@ -1,0 +1,7 @@
+{
+  result: {
+    session: undefined,
+    user: undefined
+  },
+  error: null
+}

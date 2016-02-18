@@ -1,0 +1,25 @@
+  {
+    results: [
+      {
+        title: 'Node.js',
+        author: 'JS Node', 
+        notyficationDate: 1516,
+        status: "zaakceptowano"
+      },
+      {
+        title: 'Node.js',
+        author: 'JS Node', 
+        notyficationDate: 1561,
+        status: "zaakceptowano"
+      },
+      {
+        title: 'Node.js',
+        author: 'JS Node', 
+        notyficationDate: 87979,
+        status: "zaakceptowano"
+      }
+    ],
+    total: 3,
+    error: null
+  }
+

@@ -1,0 +1,19 @@
+{
+  result: {
+    session: {
+        originalMaxAge: 86400000,
+        expires: "2015-09-24T06:41:38.187Z",
+        httpOnly: true,
+        path: "/"
+      },
+    user: {
+        dn: "CN=ldap_biblioteka,OU=RepoRobots,OU=PGS,DC=pgs-soft,DC=com",
+        controls: [],
+        givenName: "ldap_biblioteka",
+        displayName: "ldap_biblioteka",
+        sAMAccountName: "ldap_biblioteka",
+        userPrincipalName: "ldap_biblioteka@pgs-soft.com"
+      }
+    },
+  error: null  
+}

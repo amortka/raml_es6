@@ -1,0 +1,57 @@
+{
+  results: [
+    {
+      ID: 12345,
+      CopyID: 12345
+      CoverImage:"xczc",
+      Title: 'Node.js', // {String}
+      Authors: 'JS Node', // {String}
+      Created: 12345678, // {Number} timestamp
+      CreatedBy: 'tester1',
+      Published: 2015, // {Number} year
+      Rating: 9.1,
+      CommentsCount: 3,
+      IsBorrowed: true,
+      IsQueued: false,
+      ReturnDate: 1567944,
+      Location: 'wro',
+      Tags: [ 'c#', 'php' ]
+    },
+    {
+      ID: 12345,
+      CopyID: 12345
+      CoverImage:"xczc",
+      Title: 'Node.js', // {String}
+      Authors: 'JS Node', // {String}
+      Created: 12345678, // {Number} timestamp
+      CreatedBy: 'tester1',
+      Published: 2015, // {Number} year
+      Rating: 4.2,
+      CommentsCount: 3,
+      IsBorrowed: true,
+      IsQueued: false,
+      ReturnDate: 1567944,
+      Location: 'rze',
+      Tags: [ 'c#', 'php' ]
+    },
+    {
+      ID: 12345,
+      CopyID: 12345
+      CoverImage:"xczc",
+      Title: 'Node.js', // {String}
+      Authors: 'JS Node', // {String}
+      Created: 12345678, // {Number} timestamp
+      CreatedBy: 'tester1',
+      Published: 2015, // {Number} year
+      Rating: 3.1,
+      CommentsCount: 3,
+      IsBorrowed: true,
+      IsQueued: false,
+      ReturnDate: 1567944,
+      Location: 'onl',
+      Tags: [ 'c#', 'php' ]
+    }
+  ],
+  total: 3,
+  error: null
+}

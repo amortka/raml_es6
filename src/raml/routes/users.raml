@@ -1,0 +1,28 @@
+#/users:
+  description: Handles user information, thumbnail photo
+  /me:
+    get:
+      description: Returns user information
+      headers:
+        authorization:
+          example: !include ../examples/header-authorization.json
+      responses:
+        200:
+          body:
+            example: !include ../examples/success-login.json
+        400:
+          body:
+            example: !include ../examples/error-login.json
+    /photo:
+      get:
+        description: Returns users thumbnail photo
+        headers:
+          authorization:
+            example: !include ../examples/header-authorization.json
+        responses:
+          200:
+            body:
+              example: '{imageUrl: "http://www.lorempixel.com/100/100"}'
+          400:
+            body:
+              example: !include ../examples/error-login.json

@@ -1,0 +1,11 @@
+{
+"user":
+  {
+    "dn":"CN=ldap_biblioteka,OU=RepoRobots,OU=PGS,DC=pgs-soft,DC=com",
+    "givenName":"ldap_biblioteka",
+    "displayName":"ldap_biblioteka",
+    "sAMAccountName":"ldap_biblioteka",
+    "userPrincipalName": "ldap_biblioteka@pgs-soft.com",
+    "role":"User"
+  }
+}

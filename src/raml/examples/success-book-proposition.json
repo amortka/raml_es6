@@ -1,0 +1,14 @@
+{
+    "title": "Node.js",
+    "author": "JSNode",
+    "link": "tester1",
+    "bookDescription": "blabla",
+    "locations": [
+        "wro",
+        "rze"
+    ],
+    "tags": [
+        "c#",
+        "php"
+    ]
+}

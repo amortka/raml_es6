@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "properties": {
+    "ID": {
+      "required": true,
+      "type": "string"
+    },
+    "CopyID": {
+      "required": true,
+      "type": "string"
+    },
+     "CoverImage": {
+      "required": true,
+      "type": "string"
+    },
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "Authors": {
+      "required": false,
+      "type": "string"
+    },
+    "Created": {
+      "required": true,
+      "type": "integer"
+    },
+    "Published": {
+      "required": true,
+      "type": "integer"
+    },
+    "Rating": {
+      "required": false,
+      "type": "number"
+    },
+    "BookDescription": {
+      "required": true,
+      "type": "string"
+    },
+    "Status": {
+      "required": true,
+      "type": "string"
+    },
+    "Available":
+    {
+      "wro": 3, "rze": 2, "gda": 4, "onl": 1
+    }
+    ,
+    "tags": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string"
+            }
+        ]
+
+  }
+}

@@ -1,0 +1,39 @@
+{
+  results: [
+    {
+      "ID": "56b3498986ebcc31b4227f52",
+      "Title": "minim irure quis sit",
+      "Authors": "Cobb Shaffer",
+      "BorrowDate": "Thu Feb 04 2016 12:52:25 GMT+0000",
+      "ReturnDate": "Thu Feb 04 2016 12:52:25 GMT+0000"
+    },
+    {
+      "ID": "56b34989e908bf4a83c61b3a",
+      "Title": "non qui anim exercitation",
+      "Authors": "Watson King",
+      "BorrowDate": "Thu Feb 04 2016 12:52:25 GMT+0000",
+      "ReturnDate": "Thu Feb 04 2016 12:52:25 GMT+0000"
+    },
+    {
+      "ID": "56b34989ae475ce3c6b4a581",
+      "Title": "elit dolor excepteur consequat",
+      "Authors": "Mcmahon Robertson",
+      "BorrowDate": "Thu Feb 04 2016 12:52:25 GMT+0000",
+      "ReturnDate": "Thu Feb 04 2016 12:52:25 GMT+0000"
+    },
+    {
+      "ID": "56b3498965cbf809cb8cd6ce",
+      "Title": "elit proident velit labore",
+      "Authors": "Lois Nieves",
+      "BorrowDate": "Thu Feb 04 2016 12:52:25 GMT+0000",
+      "ReturnDate": "Thu Feb 04 2016 12:52:25 GMT+0000"
+    },
+    {
+      "ID": "56b3498987ffc1dcd5182d93",
+      "Title": "mollit nulla id est",
+      "Authors": "Fannie Gilbert",
+      "BorrowDate": "Thu Feb 04 2016 12:52:25 GMT+0000",
+      "ReturnDate": "Thu Feb 04 2016 12:52:25 GMT+0000"
+    }
+  ]
+}

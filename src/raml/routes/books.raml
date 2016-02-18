@@ -1,0 +1,160 @@
+#/books
+  description: Endpoint representing books resource
+  get:
+    description: Gets books collection
+    is: [ pageable, sortable, searchable ]
+    queryParameters:
+      locations:
+        description: filter collection by given locations (multiple=OR)
+        type: string
+        enum: [wro,rze,gda,online]
+        example: "wro,online"
+      status:
+        description: status for current user (multiple=OR)
+        type: string
+        enum: [returned,ordered,borrowed,notReturned]
+        example: "ordered,borrowed"
+    responses:
+      200:
+        body:
+          schema: collection
+          example: !include ../examples/success-books-default.json
+  post:
+    description: (Admin) Add new book
+    body:
+      formParameters:
+        ISBN:
+          description: ISBN code
+          type: string
+          required: true
+          example: 1-84356-028-3
+        CoverImage:
+          description: URL to cover image
+          type: string
+          required: true
+        Title:
+          description: book's title
+          type: string
+          required: true
+          example: sample string
+        Authors:
+          description: book's authors
+          type: string
+          required: true
+          example: sample string
+        PublishYear:
+          description: year of publication
+          type: integer
+          required: true
+          example: 2016
+        Locations:
+          description: book's locations
+          type: string
+          required: true
+          example: |
+             {
+               "wro": 3,
+               "rze": 2,
+               "gda": 0,
+               "onl": 1
+             }
+        Tags:
+          description: list of tags
+          required: true
+          example: |
+            [
+             {
+               "Name": "sample string 1"
+             },
+             {
+               "Name": "sample string 1"
+             }
+            ]
+  /propositions:
+    get:
+      responses:
+        200:
+          body:
+            example: !include ../examples/success-books-proposition.json          
+    post:
+      description: add new book proposition
+      queryParameters:
+          body:
+            example: !include ../examples/success-book-proposition.json       
+
+  /latest:
+    get:
+      description: Collection of latest books
+
+  /popular:
+    get:
+      description: Collection of most popular books
+  
+  /mybooksborrowed:
+    get:
+      description: Collection of my borrowed books
+      responses:
+        200:
+          body:
+            example: !include ../examples/success-mybooksborrowed.json
+  /mybookswaiting:
+      get:
+        description: Collection of my borrowed books
+        responses:
+          200:
+            body:
+              example: !include ../examples/success-mybookswaiting.json
+  /mybookshistory:
+    get:
+      description: Collection of my borrowed books
+      responses:
+        200:
+          body:
+            example: !include ../examples/success-mybookshistory.json
+  /{bookId}:
+    get:
+      description: Get book by ID
+      responses:
+        200:
+          body:
+            schema: book
+            example: !include ../examples/success-book-default.json
+    put:
+      description: (Admin) Edit book by ID
+    delete:
+      description: (Admin) Delete book by ID
+
+    /orderbyid:
+      put:
+        description: Order book by ID. Borrow automatic if available.
+        body:
+          formParameters:
+            CopyID:
+              description: ID of book copy
+              type: integer
+              required: true
+              example: 1234567
+    /orderbylocation:
+      put:
+        description: Order book by ID. Borrow automatic if available.
+        body:
+          formParameters:
+            location:
+              description: location of book
+              type: string
+              required: true
+              example: 'wro'
+    /return:
+      put:
+        description: Return book by ID
+    /comments:
+      get:
+        description: Get collection of comments for book
+      put:
+        description: Add new comment
+      /{commentId}:
+        delete:
+          description: Delete comment
+    /related:
+      get:
+        description: Get collection of related books
