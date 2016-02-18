@@ -1,4 +1,5 @@
 'use strict';
+
 import * as _ from 'lodash';
 import fs from 'fs';
 import path from 'path';

@@ -1,2 +1,4 @@
-require('babel-register');  
+'use strict';
+
+require('babel-register');
 require('./app.js');
